@@ -9,8 +9,8 @@ const localDb = "mongodb://localhost:27017/yelp-camp";
 const dbUrl = 'mongodb+srv://hr:hritikrao@cluster0.0isic.mongodb.net/yelpcamp?retryWrites=true&w=majority';
 const session = require('express-session');
 const MongoDBStore = require("connect-mongodb-session")(session);
-const store = new MongoDBStore({
-    url: localDb,
+const store = new MongoDBStore({         //thsi creates a mongoose model for our session to keep track of authrizations and signed in status
+    url: dbUrl,
     touchAfter: 24 * 60 * 60
 });
 store.on("error", function (e) {

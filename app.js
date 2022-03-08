@@ -120,7 +120,7 @@ app.use((err,req, res, next)=>{              //error handler
     res.status(err.status).render("pages/error", {err});       //we can send both err.stack or err.message as stack trace is extremely usefull.
                                             //next(err) makes sense ionly when the current error handler hasnt closed tghe req res cycle
 })
-const port = process.env.PORT || 3000;
-app.listen(port,() => {
-    console.log(`port ${port} is listening`);
+//const port = process.env.PORT || 3000;
+app.listen(80,() => {
+    console.log(`port 80 is listening`);
 })

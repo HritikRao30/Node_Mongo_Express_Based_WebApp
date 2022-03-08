@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, "Public")));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 //mongodb + srv://HR:<password>@cluster0.uwm8v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-mongoose.connect(localDb, { //creates a database called yelp-camp
+mongoose.connect(dbUrl, { //creates a database called yelp-camp
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }) 

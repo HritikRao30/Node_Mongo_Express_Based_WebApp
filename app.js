@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 const express = require("express");
 const path = require('path');
 const mongoose = require("mongoose");
-const localDb = "mongodb://localhost:27017/yelp-camp";
+//const localDb = "mongodb://localhost:27017/yelp-camp";
 const dbUrl = 'mongodb+srv://hr:hritikrao@cluster0.0isic.mongodb.net/yelpcamp?retryWrites=true&w=majority';
 const session = require('express-session');
 const MongoDBStore = require("connect-mongodb-session")(session);

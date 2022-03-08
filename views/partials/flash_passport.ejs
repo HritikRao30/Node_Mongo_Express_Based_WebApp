@@ -1,0 +1,14 @@
+
+<% if(messages.length) {%>   <%=//this is to ensure that messages dont get show when length is zero%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <%= messages %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+    
+<% if(error.length) {%>      <%=//this is to ensure that errors dont get show when length is zero%>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
